@@ -22,6 +22,9 @@ switch ($action) {
     case 'signature_form': // displays a page that has signature_form for the user to sign a petition. in this case we'ill need the id of the petition selected by the user so it will be passed in the URL
         include 'signature_form.php';
         break;
+    case 'get_new_petitions':
+        include 'get_new_petitions.php';  // New case for notifications
+        break;
     default:
         // If action is unknown, default to showing the list
         include 'liste_petition.php';
